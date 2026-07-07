@@ -34,10 +34,10 @@ const reviewSchema = new mongoose.Schema(
     },
 
     comment: {
-      type: String,
-      required: true,
-      trim: true,
-    },
+  type: String,
+  default: "",
+  trim: true,
+}
   },
   {
     timestamps: true,
