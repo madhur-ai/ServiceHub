@@ -24,8 +24,7 @@ export default function CheckoutForm() {
       elements,
 
       confirmParams: {
-        return_url:
-          "http://localhost:5173/payment-success",
+        return_url: `${window.location.origin}/payment-success`,
       },
     });
 
