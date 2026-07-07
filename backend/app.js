@@ -21,7 +21,9 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin:[ "http://localhost:5173",
+    "https://service-hub-1.vercel.app",
+  ],
     credentials: true,
   })
 );
